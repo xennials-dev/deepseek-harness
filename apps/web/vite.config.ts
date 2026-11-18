@@ -179,6 +179,7 @@ export default defineConfig({
     // `modules` target (es2020-era) rejects that syntax.
     target: 'es2022',
     sourcemap: true,
+    chunkSizeWarningLimit: 800,
     rollupOptions: {
       input: {
         index: src('./index.html'),
